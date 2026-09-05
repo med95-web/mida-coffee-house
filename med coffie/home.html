@@ -11,7 +11,7 @@
         <nav>
             <div class="logo">
                 <img src="logo.png" alt="" >
-                <h1>MIDA COFFEE HOUSE</h1>
+                <h1>MIDAS COFFEE HOUSE</h1>
             </div>
           <div class="links">
            <ul>
@@ -20,7 +20,7 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
-            <button class="order-btn">Order Now</button>
+            <button class="order-btn" onclick="orderNow('order now function is currently on progress')">Order Now</button>
           </div>
            
         </nav>
@@ -31,7 +31,7 @@
                 <p>Freshly brewed every day</p>
                 <h1>Your perfect cup <br>Awaits</h1>
                 <p>Enjoy delicious coffee made with carefully selected beans</p>
-                <button class="order-btn">Order now</button>
+                <button class="order-btn" onclick="orderNow('order now function is currently on progress')">Order now</button>
 
             </div>
             <div class="img">
@@ -49,22 +49,22 @@
                     <h3>Classic Latte</h3>
                     <p>Rich espresso blended with smooth steamed milk</p>
                     <h3>40le</h3>
-                    <button class="order-btn">Oder now</button>
+                    <button class="order-btn" onclick="orderNow('order now function is currently on progress')">Oder now</button>
                  </div>
                  <div class="coffee-card">
                     <img src="mocha.png" alt="">
                     <h3>Mocha</h3>
                     <p>Cold creamy and refreshing coffee</p>
                     <h3>49le</h3>
-                    <button class="order-btn">Oder now</button>
+                    <button class="order-btn" onclick="orderNow('order now function is currently on progress')">Oder now</button>
                  </div>
                  
                  <div class="coffee-card">
                     <img src="cao.png" alt="">
                     <h3>Cappuccino</h3>
-                    <p>Espresso with steam milk and slik foam</p>
+                    <p>Espresso with steam milk and silk foam</p>
                     <h3>55le</h3>
-                    <button class="order-btn">Oder now</button>
+                    <button class="order-btn" onclick="orderNow('order now function is currently on progress')">Oder now</button>
                  </div>
                 
                  <div class="coffee-card">
@@ -72,7 +72,7 @@
                     <h3>Espresso</h3>
                     <p>Strong, smooth and freshly brewed</p>
                     <h3>60le</h3>
-                    <button class="order-btn">Oder now</button>
+                    <button class="order-btn" onclick="orderNow('order now function is currently on progress')">Oder now</button>
                  </div>
             </div>
 
@@ -80,12 +80,12 @@
         <section class="about" id="About">
             <div class="about-image"><img src="mocha.png" alt=""></div>
             <div class="about-text">
-                <p class="subtitle">ABOUT MIDA COFFEE HOUSE</p>
+                <p class="subtitle">ABOUT MIDAS COFFEE HOUSE</p>
                 <h2>More Than Just Coffee</h2>
-                <p>We belive great coffee brings people together. <br>Every cup is freshly prepared using carefully selected coffee beans and quality ingredients.</p>
+                <p>We believe great coffee brings people together. <br>Every cup is freshly prepared using carefully selected coffee beans and quality ingredients.</p>
 
-                <p>Whether you're meeting friends, studying, working, or simply relaxing, mida coffee house is your place to unwind.</p>
-                <button class="order-btn">Discover more</button>
+                <p>Whether you're meeting friends, studying, working, or simply relaxing, midas coffee house is your place to unwind.</p>
+               <a href="#Menu"> <button class="order-btn" >Discover more</button></a>
             </div>
 
         </section>
@@ -106,16 +106,20 @@
                     <p>Monday - Saturday: 7:00 AM - 9:00 PM</p>
                          <p>Sunday: 8:00 AM - 6:00 PM</p>
                 </div>
-                <form action="" class="contact-form">
+
+                <form action="" class="contact-form" id="form">
                    <div class="form">
-                     <input type="text" placeholder="your name"required>
-                    <input type="email" placeholder="your email" required>
+                     <input type="text" placeholder="your name" id="name" >
+                    <input type="email" placeholder="your email" id="email" >
                    </div>
                     <div class="text">
-                        <textarea name="" id="" placeholder="your message"row="5"></textarea>
+                    <input type="text" placeholder="your message" id="message">
                     <button type="submit">send message</button>
                     </div>
+                    <h4 id="successMessage"></h4>
+
                 </form>
+
             </div>
         </section>
     
@@ -142,9 +146,10 @@
             </div>
         </div>
   <div class="footer-buttom">
-                <p>&copy;2026 mida coffee house .All Rights Reserved</p>
+                <p>&copy;2026 midas coffee house .All Rights Reserved</p>
             </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
